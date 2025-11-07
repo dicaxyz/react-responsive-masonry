@@ -47,7 +47,7 @@ class MyWrapper extends React.Component {
         return (
             <ResponsiveMasonry
                 columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}
-                gutterBreakPoints={{350: "12px", 750: "16px", 900: "24px"}}
+                gutterBreakpoints={{350: "12px", 750: "16px", 900: "24px"}}
             >
                 <Masonry>
                     <ChildA />
@@ -79,14 +79,12 @@ class MyWrapper extends Component {
 
 ## Props
 
-### Masonry component
+### Mansonry component
 
 | Name         | PropType | Description                                            | Default |
 | ------------ | -------- | ------------------------------------------------------ | ------- |
 | columnsCount | Number   | Injected by ResponsiveMasonry                          | 3       |
 | gutter       | String   | Margin surrounding each item e.g. "10px" or "1.5rem"   | "0"     |
-| className    | String   | Custom CSS class applied to the container element      | null    |
-| style        | Object   | Style object for customizing the container element     | {}      |
 | containerTag | String   | Tag name of the container element                      | "div"   |
 | itemTag      | String   | Tag name of the item element                           | "div"   |
 | itemStyle    | Object   | Style object applied to each item                      | {}      |
@@ -97,7 +95,7 @@ class MyWrapper extends Component {
 | Name                    | PropType | Description                                                                              | Default                  |
 | ----------------------- | -------- | ---------------------------------------------------------------------------------------- | ------------------------ |
 | columnsCountBreakPoints | Object   | Keys are breakpoints in px, values are the columns number                                | {350: 1, 750: 2, 900: 3} |
-| gutterBreakPoints       | Object   | Keys are breakpoints in px, values are the gutter value in any valid CSS value for 'gap' |                          |
+| gutterBreakpoints       | Object   | Keys are breakpoints in px, values are the gutter value in any valid CSS value for 'gap' |                          |
 
 ## Contributing
 
